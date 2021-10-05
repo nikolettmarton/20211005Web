@@ -1,31 +1,109 @@
 <!doctype html>
 <html lang="hu">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="container">
+    <style>
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+        .hasab{
+    width: 25%;
+    max-width: 24%;
+    float: left;
+    text-align: justify;
+    }
+    .bal{
+    padding: 0 15px 0 0;
+}
+.jobb{
+    padding: 0 0 0 15px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-info">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="p-3 border bg-light">Row custom</div>
+            <div class="col bg-dark text-white pt-5 pb-3">
+                <h1 class="display-1">Lorem ipsum dolor sit amet</h1>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="p-3 border bg-light">Row custom</div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="p-3 border bg-light">Row custom</div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="p-3 border bg-light">Row custom</div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cég</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Rólunk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kapcsolat</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md6">
+                    <div class="hasab bal">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien ligula,
+                            faucibus at nibh nec, egestas efficitur odio. Mauris molestie metus nec tristique semper. Sed sit
+                            amet
+                            vestibulum felis, at tristique nisi. Vestibulum vulputate metus sed justo interdum tempus. Mauris
+                            venenatis sem non augue elementum, eu viverra velit ullamcorper. Proin accumsan, leo at euismod
+                            faucibus, nisl turpis ullamcorper ligula, et varius odio erat et purus. Vivamus elementum orci odio,
+                            blandit lacinia justo rutrum egestas.</p>
+                        <p>Cras nisl neque, commodo eget lobortis id, imperdiet non metus.
+                            Mauris sed ipsum varius, rhoncus metus nec, congue velit. Donec at dapibus ipsum, sed bibendum
+                            turpis.
+                            Praesent quis pellentesque ante, nec tempor augue. Donec bibendum non enim a pretium. Mauris finibus
+                            sem
+                            sit amet eros ultrices, pulvinar fermentum ex posuere.</p>
+                    </div>
+                </div>
+                <div class="col-md6">
+                    <div class="hasab jobb">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien ligula,
+                        faucibus at nibh nec, egestas efficitur odio. Mauris molestie metus nec tristique semper. Sed sit amet
+                        vestibulum felis, at tristique nisi. Vestibulum vulputate metus sed justo interdum tempus. Mauris
+                        venenatis sem non augue elementum, eu viverra velit ullamcorper. Proin accumsan, leo at euismod
+                        faucibus, nisl turpis ullamcorper ligula, et varius odio erat et purus. Vivamus elementum orci odio,
+                        blandit lacinia justo rutrum egestas. Cras nisl neque, commodo eget lobortis id, imperdiet non metus.
+                        Mauris sed ipsum varius, rhoncus metus nec, congue velit. Donec at dapibus ipsum, sed bibendum turpis.
+                        Praesent quis pellentesque ante, nec tempor augue. Donec bibendum non enim a pretium. Mauris finibus sem
+                        sit amet eros ultrices, pulvinar fermentum ex posuere.</p>
+        
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+            crossorigin="anonymous"></script>
 
-  </body>
+</body>
+
 </html>
